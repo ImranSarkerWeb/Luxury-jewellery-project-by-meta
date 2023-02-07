@@ -6,6 +6,7 @@
 
 body{
     margin: 0 5%;
+    background-color: #edefee;
 }
 header{
     margin-top: 20px;
@@ -24,5 +25,85 @@ nav>ul>li{
     display: inline-block;
     list-style: none;
     margin: 0 auto;
-    padding: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.banner{
+    margin-top: 20px;
+    background-image: url('../assets/banner.png');
+    background-repeat: no-repeat;
+    padding: 20px;
+    object-fit: contain;
+    object-position: bottom;
+    background-size: cover;
+    border-radius: 10px;
+}
+.banner>h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 20px;
+}
+.banner>p{
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+.content{
+    margin: 20px 0;
+    display: flex;
+    gap: 2%;
+}
+.content>article{
+   margin-top: 10px;
+    flex: 1;
+}
+
+article h1{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 2rem;
+   font-weight: 600;
+  
+}
+.card-img{
+    border-radius: 5px;
+    width:100%;
+    
+}
+
+footer{
+    background-color: rgb(199, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    color:#fff;
+}
+.footer-logo{
+    width: 25%;
+}
+footer>div{
+    flex: 1;
+}
+
+.footer-text{
+    padding-top: 10px;
+    font-size: 1.2rem;
+    border-top: 2px solid wheat;
+}
+
+@media screen and (max-width: 576px) {
+    .content{
+       flex-direction: column;
+       gap: 10px;
+    }
+
+    .footer-logo{
+        width: 50%;
+    }
 }
